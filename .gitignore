@@ -1,23 +1,38 @@
-HELP.md
+### Maven ###
 target/
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+### Spring Boot ###
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.bak
+
+### Banco H2 (local) ###
+*.mv.db
+*.h2.db
+*.trace.db
+/data/
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Eclipse / STS ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
 
 ### NetBeans ###
 /nbproject/private/
@@ -25,9 +40,9 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+### Sistema Operacional ###
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
