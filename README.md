@@ -22,6 +22,8 @@ Atualmente, o sistema está em **fase inicial** e novas funcionalidades ainda es
 ## Funcionalidades já implementadas  
     Cadastro de usuários (`POST /api/v1/usuarios`)  
     Busca de usuário por ID (`GET /api/v1/usuarios/{id}`)
+    Busca de usuário Todos Usuários (`GET /api/v1/usuarios/)
+    Update de senha de usuário (`PATH /api/v1/usuarios/{id}`)
     Configuração inicial de banco de dados (MySQL e H2)  
     Documentação da API com Swagger (http://localhost:8080/swagger-ui.html)
 
