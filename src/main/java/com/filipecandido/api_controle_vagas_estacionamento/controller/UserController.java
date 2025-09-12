@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
+import java.util.List;
+
 @RequiredArgsConstructor //Injeção de dependecias será feira via metodo construtor
 
 @RestController
@@ -22,7 +25,7 @@ public class UserController {
         User userName = userService.saveUser(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(user); //objeto user para criar usuario no banco de dados
     }
-    //metodo get (buscar por ai)
+    //metodo get (buscar por id)
     @GetMapping("{id}")
     public ResponseEntity<User> getById(@PathVariable Long id) {//pega o id e adiciona em uma variavel tipo long
         User userName = userService.getIdUser(id);
@@ -36,5 +39,10 @@ public class UserController {
         return ResponseEntity.ok(userName);
     }
 
-
+    //metodo get (buscar todos)
+    @GetMapping
+    public ResponseEntity<List<User>>getByAll() {
+        List<User> users = userService.getByAllUsers();
+        return ResponseEntity.ok(users);
+    }
 }
