@@ -16,16 +16,23 @@ public class UserController {
 
     private final UserService userService;
 
-    //metodo post
+    //metodo post(criar um usuario no db)
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {//para encapsular o objeto usuario
         User userName = userService.saveUser(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(user); //objeto user para criar usuario no banco de dados
     }
-    //metodo get
+    //metodo get (buscar por ai)
     @GetMapping("{id}")
     public ResponseEntity<User> getById(@PathVariable Long id) {//pega o id e adiciona em uma variavel tipo long
         User userName = userService.getIdUser(id);
+        return ResponseEntity.ok(userName);
+    }
+
+    //metodo Pathmapping (para atualizar parcial a senha)
+    @PatchMapping("{id}")
+    public ResponseEntity<User> updatePassword(@PathVariable Long id, @RequestBody User user) {//pega o id e adiciona em uma variavel tipo long
+        User userName = userService.changePasswordUser(id, user.getPassword());
         return ResponseEntity.ok(userName);
     }
 

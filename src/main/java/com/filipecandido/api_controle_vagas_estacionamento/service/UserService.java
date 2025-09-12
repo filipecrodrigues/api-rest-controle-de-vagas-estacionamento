@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
+    //variável userRepository é referência do Objeto UserREpository
     private final UserRepository userRepository;
 
     @Transactional
@@ -23,7 +24,11 @@ public class UserService {
 
         return userRepository.findById(id).orElseThrow(//retorne o usuario ou lançe uma exceção
                 () -> new RuntimeException("Usuário não encontrado")
-        );
-
+        );}
+    @Transactional
+    public User changePasswordUser(Long id, String password){
+        User user = getIdUser(id);
+        user.setPassword(password);
+        return user;
     }
 }
