@@ -1,4 +1,4 @@
-package com.filipecandido.api_controle_vagas_estacionamento.web.controller;
+package com.filipecandido.api_controle_vagas_estacionamento.controller;
 
 
 import com.filipecandido.api_controle_vagas_estacionamento.entity.User;
