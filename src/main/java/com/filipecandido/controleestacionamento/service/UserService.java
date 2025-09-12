@@ -1,7 +1,7 @@
-package com.filipecandido.api_controle_vagas_estacionamento.service;
+package com.filipecandido.controleestacionamento.service;
 
-import com.filipecandido.api_controle_vagas_estacionamento.entity.User;
-import com.filipecandido.api_controle_vagas_estacionamento.repository.UserRepository;
+import com.filipecandido.controleestacionamento.entity.User;
+import com.filipecandido.controleestacionamento.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

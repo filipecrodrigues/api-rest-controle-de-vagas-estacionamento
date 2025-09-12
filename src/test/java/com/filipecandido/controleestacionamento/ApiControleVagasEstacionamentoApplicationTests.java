@@ -1,4 +1,4 @@
-package com.filipecandido.api_controle_vagas_estacionamento;
+package com.filipecandido.controleestacionamento;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

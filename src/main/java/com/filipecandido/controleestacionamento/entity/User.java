@@ -1,4 +1,4 @@
-package com.filipecandido.api_controle_vagas_estacionamento.entity;
+package com.filipecandido.controleestacionamento.entity;
 
 import jakarta.persistence.*;
 

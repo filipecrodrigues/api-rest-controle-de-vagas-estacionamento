@@ -1,8 +1,8 @@
-package com.filipecandido.api_controle_vagas_estacionamento.web.controller;
+package com.filipecandido.controleestacionamento.web.controller;
 
 
-import com.filipecandido.api_controle_vagas_estacionamento.entity.User;
-import com.filipecandido.api_controle_vagas_estacionamento.service.UserService;
+import com.filipecandido.controleestacionamento.entity.User;
+import com.filipecandido.controleestacionamento.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

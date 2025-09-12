@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.filipecandido.api-controle-vagas-estacionamento' is invalid and this project uses 'com.filipecandido.api_controle_vagas_estacionamento' instead.
+* The original package name 'com.filipecandido.api-controle-vagas-estacionamento' is invalid and this project uses 'com.filipecandido.controleestacionamento' instead.
 
 # Getting Started
 

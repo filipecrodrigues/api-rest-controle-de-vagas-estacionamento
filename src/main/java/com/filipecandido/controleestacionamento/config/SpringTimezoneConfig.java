@@ -1,4 +1,4 @@
-package com.filipecandido.api_controle_vagas_estacionamento.config;
+package com.filipecandido.controleestacionamento.config;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.context.annotation.Configuration;

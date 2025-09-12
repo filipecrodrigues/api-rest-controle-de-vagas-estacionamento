@@ -1,4 +1,4 @@
-package com.filipecandido.api_controle_vagas_estacionamento;
+package com.filipecandido.controleestacionamento;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
